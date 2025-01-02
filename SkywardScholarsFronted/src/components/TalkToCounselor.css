@@ -1,0 +1,276 @@
+/* Container styles for the Talk to Counselor page */
+.talk-to-counselor-container {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin-top: 50px;
+  }
+  
+  /* Header styling */
+  .header {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  /* Contact details section */
+  .contact-details {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .contact-details h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .contact-details p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+  }
+  
+  /* List of alternative actions */
+  .info-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  .info-list li {
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-list li::before {
+    content: "✔️";
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* LS Plus+ section */
+  .ls-plus {
+    background-color: #fff;
+    color: #000;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+  
+  .ls-plus h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .ls-plus ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .ls-plus ul li {
+    margin: 10px 0;
+  }
+  
+  .ls-plus ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Counselor slider */
+  .counselor-slider {
+    margin-top: 40px;
+  }
+  
+  .counselor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .counselor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .counselor-info {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* LeapScholar Shorts section */
+  .leap-scholar-shorts {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .leap-scholar-shorts h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .leap-scholar-shorts .button {
+    background-color: #fff;
+    color: #000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  .leap-scholar-shorts .button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* IELTS Exam Details */
+  .ielts-info {
+    margin-top: 40px;
+  }
+  
+  .ielts-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .ielts-info .button {
+    background-color: #fff;
+    color: #000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  .ielts-info .button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Testimonials section */
+  .testimonials {
+    margin-top: 60px;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .testimonial p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial p strong {
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      font-size: 2rem;
+    }
+  
+    .contact-details h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-details p {
+      font-size: 1rem;
+    }
+  
+    .info-list li {
+      font-size: 0.9rem;
+    }
+  
+    .ls-plus h3 {
+      font-size: 1.5rem;
+    }
+  
+    .counselor-image {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .counselor-info {
+      font-size: 0.9rem;
+    }
+  
+    .button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    .testimonial {
+      width: 90%;
+    }
+  }
+  
+
+  .features-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  
+  .feature-item {
+    width: 23%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-icon img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+  }
+  
+  .feature-content {
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  .feature-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a73e8;
+  }
+  
+  .feature-description {
+    font-size: 14px;
+    color: #626262;
+    margin-top: 4px;
+  }
+  

@@ -1,0 +1,136 @@
+/* Hide scrollbars for better UI */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
+  /* Overall section styles */
+  .discount-section {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Slightly wider container */
+    margin: 0 auto; /* Center the container */
+    background: linear-gradient(90deg, #258784 0%, #5ecfbb 50%, #32bdb9 100%);
+    border-radius: 1rem;
+    padding: 1rem 0.5rem; /* Compact padding */
+    overflow: hidden;
+     /* Fixed height for the container */
+  }
+  
+  /* Title styles */
+  .discount-section h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px; /* Maintain readability */
+    font-weight: 600;
+    margin-bottom: 0.5rem; /* Less margin below the title */
+  }
+  
+  .discount-section h3 img {
+    width: 80px;
+    height: 8px;
+  }
+  
+  /* Scrollable container styles */
+  .scroll-container {
+    display: flex;
+    gap: 1rem; /* Maintain gap between cards */
+    overflow-x: auto;
+    padding: 0 1rem; /* Adjusted padding */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* Enables snap scrolling */
+    max-width: 100%; /* Adjusted to fit the parent container */
+    margin: 0 auto; /* Center the scrollable content */
+  }
+  
+  /* Individual discount card styles */
+  .discount-card {
+    min-width: 400px; /* Adjusted card width to fit better */
+    max-width: 600px; /* Adjusted to ensure cards are not too wide */
+    height: 200px; /* Set fixed height for cards */
+    flex: 0 0 auto;
+    scroll-snap-align: start; /* Cards snap into place */
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden; /* Ensure content stays within the card */
+  }
+  
+  /* Discount card image styles */
+  .discount-card img {
+    width: 100%; /* Ensure the image fits the card width */
+    height: 100%; /* Ensure the image fits the card height */
+    object-fit: cover; /* Maintain image aspect ratio */
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .discount-card img:hover {
+    transform: scale(1.05); /* Add subtle zoom on hover */
+  }
+  
+  /* Scroll buttons (arrows) */
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px; /* Adjust button size */
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .scroll-button img {
+    width: 15px; /* Adjust arrow size for smaller buttons */
+    height: 15px;
+    filter: invert(1); /* Ensure white arrows on dark background */
+  }
+  
+  .scroll-button.left {
+    left: 0.5rem;
+  }
+  
+  .scroll-button.right {
+    right: 0.5rem;
+  }
+  
+  .scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Dots container */
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.5rem; /* Reduce space below cards */
+  }
+  
+  /* Individual dot styles */
+  .dots-container .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dots-container .dot.active {
+    background-color: #fff;
+  }
+  

@@ -1,0 +1,297 @@
+/* UserForm.css */
+
+/* General Styles */
+.form1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .form-page .btn-journey {
+    background-color: white; /* Light background on hover */
+  color: black; /* Change text color to black on hover */
+  border: 1px solid black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Step Styles */
+  .step {
+    margin-bottom: 20px;
+  }
+  
+  /* Country Selection */
+  .countries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .country-card {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .country-card.selected {
+    background-color: #e0e0e0;
+    border-color: #007bff;
+  }
+  
+  .country-card:hover {
+    background-color: #ddd;
+  }
+  
+  .flag {
+    font-size: 24px;
+  }
+  
+  .country-card span {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Intake Selection */
+  .intakes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .intake-card {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .intake-card.selected {
+    background-color: #e0e0e0;
+    border-color: #007bff;
+  }
+  
+  .intake-card:hover {
+    background-color: #ddd;
+  }
+  
+  .recommended {
+    font-size: 12px;
+    color: #ff5733;
+    font-weight: bold;
+  }
+  
+  /* Program Selection */
+  .programs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .program-card {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .program-card.selected {
+    background-color: #e0e0e0;
+    border-color: #007bff;
+  }
+  
+  .program-card:hover {
+    background-color: #ddd;
+  }
+  
+  /* Education Level Selection */
+  .education-levels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .education-card {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .education-card.selected {
+    background-color: #e0e0e0;
+    border-color: #007bff;
+  }
+  
+  .education-card:hover {
+    background-color: #ddd;
+  }
+  
+  /* Input Styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+  }
+  
+  /* Back Button */
+  .btn-back {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #c62828;
+  }
+  
+  /* University Admit */
+  .university-admit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .admit-btn {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    width: 48%;
+    transition: all 0.3s ease;
+  }
+  
+  .admit-btn.selected {
+    background-color: #e0e0e0;
+    border-color: #007bff;
+  }
+  
+  .admit-btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Passport Status */
+  .passport-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .passport-btn {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    width: 48%;
+    transition: all 0.3s ease;
+  }
+  
+  .passport-btn.selected {
+    background-color: #e0e0e0;
+    border-color: #007bff;
+  }
+  
+  .passport-btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Form Labels */
+  label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Select Dropdown */
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Final Step Form */
+  .step-6 form {
+    margin-top: 20px;
+  }
+  
+  /* Final Step Heading */
+  .step-6 h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  

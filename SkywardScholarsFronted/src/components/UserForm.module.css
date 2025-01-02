@@ -1,0 +1,197 @@
+.form1-Container{
+   
+  padding: 40px;
+  
+  margin-top: 30px;
+}
+.form-Container {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    margin-bottom: 20px; 
+  }
+  
+  /* Step container styling */
+  .step {
+    display: none;
+  }
+  
+  .step.active {
+    display: block;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  button:hover {
+    background-color: #959895;
+  }
+  
+  button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+  }
+  
+  /* Styling for country selection */
+  .countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .country-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 120px;
+    text-align: center;
+  }
+  
+  .country-card:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .selected {
+    background-color: #45a049;
+    color: white;
+  }
+  
+  .flag {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  
+  /* Styling for input fields */
+  input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  /* Styling for program selection */
+  .programs, .education-levels, .passport-status {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .program-card, .education-card, .passport-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .program-card:hover, .education-card:hover, .passport-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .selected {
+    background-color: #45a049;
+    color: white;
+  }
+  
+  /* Style for the "recommended" label */
+  .recommended {
+    background-color: #ff9800;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .countries {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .country-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .program-card, .education-card, .passport-btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .formContainer {
+      padding: 20px;
+    }
+  
+    h2, h3 {
+      font-size: 18px;
+    }
+  
+    .program-card, .education-card, .passport-btn {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+}

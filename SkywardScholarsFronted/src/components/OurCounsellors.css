@@ -1,0 +1,266 @@
+/* Top Section */
+.top-counsellor-section {
+  margin-top: 50px;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #000, #000);
+  text-align: center;
+}
+
+.top-counsellor-header {
+  margin-bottom: 30px;
+}
+
+.top-counsellor-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.top-counsellor-subtitle {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+}
+
+.top-counsellor-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-counsellor-image {
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.top-counsellor-stats-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-counsellor-stat h5 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.top-cta-button {
+  padding: 15px 30px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+}
+
+.top-cta-button:hover {
+  background: #ddd;
+}
+
+/* Cards Section */
+.cards-counsellors-section {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.cards-section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.cards-counsellors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.cards-counsellor-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cards-counsellor-photo img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.cards-counsellor-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.cards-counsellor-experience {
+  font-size: 1rem;
+  color: #555;
+}
+
+.cards-highlight {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.cards-action-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cards-cta-button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cards-cta-button:hover {
+  background: #555;
+}
+
+/* Connect Section */
+.connect-counsellor-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #222;
+  padding: 50px 20px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-counsellor-info {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px;
+}
+
+.connect-counsellor-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.connect-counsellor-subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.connect-cta-button-container {
+  margin-top: 20px;
+}
+
+.connect-cta-button {
+  padding: 15px 30px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.connect-cta-button:hover {
+  background: #666;
+}
+
+.connect-counsellor-image-container {
+  max-width: 400px;
+  margin: 20px;
+}
+
+.connect-counsellor-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.study-counsellor-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.study-section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #121212;
+}
+
+.study-counsellor-features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .study-counsellor-features {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.study-feature-card {
+  max-width: 300px;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.study-icon-container {
+  margin: 0 auto 15px auto;
+}
+
+.study-feature-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.study-feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #121212;
+}
+
+.study-feature-description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.study-success-stats {
+  margin-top: 40px;
+}
+
+.study-success-stats h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.study-success-stats .study-highlight-text {
+  color: #645fa5;
+}
+
+.study-success-stats p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}

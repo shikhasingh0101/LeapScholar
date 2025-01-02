@@ -1,0 +1,20 @@
+/* Remove constraints for full-page layout */
+#root {
+  max-width: 100%; /* Full width */
+  margin: 100px;
+  padding: 20px;
+  text-align: center;
+  height: 100%; /* Ensure full height */
+  
+}
+
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Full height */
+  display: flex;
+  flex-direction: column;
+  
+}
+

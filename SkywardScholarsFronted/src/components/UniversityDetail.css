@@ -1,0 +1,62 @@
+.university-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top:  50px;
+  }
+  
+  .filters-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-right: 2px solid #ddd;
+  }
+  
+  .filter-group {
+    margin-bottom: 20px;
+  }
+  
+  .filter-group h4 {
+    margin-bottom: 5px;
+  }
+  
+  .filter-group input,
+  .filter-group select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .clear-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .clear-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .university-info {
+    width: calc(100% - 320px); /* To leave space for the filter sidebar */
+    padding: 20px;
+  }
+  
+  .university-details .detail-item {
+    margin-bottom: 15px;
+  }
+  
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
